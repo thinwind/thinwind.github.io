@@ -1,37 +1,60 @@
-## Welcome to GitHub Pages
+# stepbystep  
+A jekyll theme, simple and clear, compatible with PC iPad and Phone (RWD)
 
-You can use the [editor on GitHub](https://github.com/thinwind/thinwind.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+## Preview
+#### PC or Pad
+<img style="box-shadow: 10px 10px 5px #888888;border: 1px solid black;" src="https://github.com/jokinkuang/stepbystep/raw/master/article.png"></img>
+#### Mobile
+<div style="box-shadow: 10px 10px 5px #888888;border: 1px solid black;">
+<img style="width:50%;" src="https://github.com/jokinkuang/stepbystep/raw/master/mobile.png"></img>
+<img style="width:50%;" src="https://github.com/jokinkuang/stepbystep/raw/master/mobile2.png"></img>
+</div>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Feature  
 
-### Markdown
+1. Compatible with PC iPad and Phone (RWD)
+2. Support blogger mood-talk(说说)
+3. Support post subdirs as post categories  
+  `_post/linux/nodejs/2016-9-1-About-Nodejs.md => linux and nodejs would merge into the post categories`
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Install
+assume the github username is "hello" then:  
 
-```markdown
-Syntax highlighted code block
+1. create a repository named "hello.github.io"  
+2. clone this repository  
+  `git clone https://github.com/jokinkuang/stepbystep.git`  
+3. push the whole thing to your repo "hello.github.io"  
+  `git remote set-url origin https://github.com/hello/hello.github.io.git`  
+  `git push origin master`  
+4. browse "hello.github.io"  
 
-# Header 1
-## Header 2
-### Header 3
+> if your github username is "world" then replace upper "hello" all to "world"  
 
-- Bulleted
-- List
+## Custom Domain  
+if you want to visit "www.hello.com" instead of "hello.github.io" then:  
 
-1. Numbered
-2. List
+1. create a file named "CNAME" (the file is already exist)  
+2. buy the "www.hello.com" domain  
+3. add following to the "CNAME"  
+  `www.hello.com`  
+4. go to the Shop where your domain bought and set the Domain DNS to:  
+  | prefix | record-type |      host       |  
+  |   www  |   CNAME     | hello.github.io |  
+5. wait a long long time  
+6. browse "www.hello.com"
 
-**Bold** and _Italic_ and `Code` text
+## Custom Your Site  
+1. you need a [duoshuo](http://www.duoshuo.com) account  
+2. you need a [google-analytics](https://www.google.com/analytics/) account  
+3. all settings are in `_config.yml` 
 
-[Link](url) and ![Image](src)
-```
+## Other  
+whoever use this theme please add your site to the [wiki](https://github.com/jokinkuang/stepbystep/wiki)  
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+## How It works  
+[English](http://www.jokinkuang.info/2016/09/03/stey-by-step-to-create-a-jekyll-theme.html)  
+[ 中文 ](http://www.jokinkuang.info/2016/09/03/how-to-create-the-jekyll-theme.html)
 
-### Jekyll Themes
+## License  
+Under The [MIT](https://tldrlegal.com/license/mit-license) License
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/thinwind/thinwind.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.

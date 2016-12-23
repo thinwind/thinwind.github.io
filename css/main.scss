@@ -1,66 +1,53 @@
 ---
+# Only the main Sass file needs front matter (the dashes are enough)
 ---
+@charset "utf-8";
 
-@import basic
-@import mixins
 
-$body: {% if site.style.body %}{{ site.style.body }}{% else %}white{% endif %}
-$padding: {% if site.style.padding %}{{ site.style.padding }}{% else %}33%{% endif %}
-$anchor: {% if site.style.anchor %}{{ site.style.anchor }}{% else %}false{% endif %}
-$nav: {% if site.style.nav %}{{ site.style.nav }}{% else %}#181818{% endif %}
-$headline: {% if site.style.headline %}{{ site.style.headline }}{% else %}#06f{% endif %}
-$description: {% if site.style.description %}{{ site.style.description }}{% else %}white{% endif %}
-$odd: {% if site.style.article.odd %}{{ site.style.article.odd }}{% else %}white{% endif %}
-$even: {% if site.style.article.even %}{{ site.style.article.even }}{% else %}#222{% endif %}
 
-body
-    +body_background($body, $padding)
-    > header, > footer
-        background: $nav
-        color: reduce($nav, 100%)
-    > div
-        background: $description
-        color: reduce($description, 100%)
+// Our variables
+$base-font-family: "Raleway",Arial,sans-serif;
+$base-font-size:   16px;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
 
-{% if site.style.serif-heading %}
+$spacing-unit:     30px;
 
-body > header h1
-    font-weight: bold
+$text-color:       #111;
+$background-color: #fdfdfd;
+$brand-color:      #2a7ae2;
 
-h1, h2, h3, h4, h5, h6 
-    font-family: "Gentium Basic", serif
-    letter-spacing: 2px
-    header &
-        text-transform: uppercase
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+$blue-color:	   #515865;
 
-{% endif %}
+// Width of the content area
+$content-width:    800px;
 
-{% if site.style.headline %}
+$on-palm:          600px;
+$on-laptop:        800px;
 
-body > div:first-of-type
-    background: $headline
-    color: reduce($headline, 100%)
-    h1
-        padding-top: 1em
-        padding-bottom: 1em
 
-nav ul
-    margin: 0
 
-{% endif %}
+// Using media queries with like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
 
-article:nth-of-type(even)
-    +article_background($even, $anchor)
 
-article:nth-of-type(odd)
-    +article_background($odd, $anchor)
 
-#paginate:nth-child(even)
-    background: $even
-    color: reduce($even, 100%)
-
-#paginate:nth-child(odd)
-    background: $odd
-    color: reduce($odd, 100%)
-
-@import vendor
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "base",
+        "layout",
+        "syntax-highlighting"
+;

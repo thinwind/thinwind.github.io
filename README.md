@@ -1,60 +1,77 @@
-# stepbystep  
-A jekyll theme, simple and clear, compatible with PC iPad and Phone (RWD)
+Contrast
+========
 
-## Preview
-#### PC or Pad
-<img style="box-shadow: 10px 10px 5px #888888;border: 1px solid black;" src="https://github.com/jokinkuang/stepbystep/raw/master/article.png"></img>
-#### Mobile
-<div style="box-shadow: 10px 10px 5px #888888;border: 1px solid black;">
-<img style="width:50%;" src="https://github.com/jokinkuang/stepbystep/raw/master/mobile.png"></img>
-<img style="width:50%;" src="https://github.com/jokinkuang/stepbystep/raw/master/mobile2.png"></img>
-</div>
+[Demo](http://niklasbuschmann.github.io/contrast)
 
-## Feature  
+![screenshot](https://cloud.githubusercontent.com/assets/4943215/9838597/ef499f66-5a61-11e5-8ad0-b2bb71383833.png)
 
-1. Compatible with PC iPad and Phone (RWD)
-2. Support blogger mood-talk(说说)
-3. Support post subdirs as post categories  
-  `_post/linux/nodejs/2016-9-1-About-Nodejs.md => linux and nodejs would merge into the post categories`
 
-## Install
-assume the github username is "hello" then:  
+## Features
 
-1. create a repository named "hello.github.io"  
-2. clone this repository  
-  `git clone https://github.com/jokinkuang/stepbystep.git`  
-3. push the whole thing to your repo "hello.github.io"  
-  `git remote set-url origin https://github.com/hello/hello.github.io.git`  
-  `git push origin master`  
-4. browse "hello.github.io"  
+ - mobile first
+ - syntax highlighting
+ - [disqus](https://disqus.com/) / [isso](http://posativ.org/isso/) integration
+ - customizable
+ - valid HTML5
 
-> if your github username is "world" then replace upper "hello" all to "world"  
+Please note: Create a *master*-branch if you want to use this theme with *.github.io.
 
-## Custom Domain  
-if you want to visit "www.hello.com" instead of "hello.github.io" then:  
+## Getting Started
 
-1. create a file named "CNAME" (the file is already exist)  
-2. buy the "www.hello.com" domain  
-3. add following to the "CNAME"  
-  `www.hello.com`  
-4. go to the Shop where your domain bought and set the Domain DNS to:  
-  | prefix | record-type |      host       |  
-  |   www  |   CNAME     | hello.github.io |  
-5. wait a long long time  
-6. browse "www.hello.com"
+If you're completely new to Jekyll, I recommend checking out the documentation at <http://jekyllrb.com> or there's a tutorial by [Smashing Magazine](http://www.smashingmagazine.com/2014/08/01/build-blog-jekyll-github-pages/).
 
-## Custom Your Site  
-1. you need a [duoshuo](http://www.duoshuo.com) account  
-2. you need a [google-analytics](https://www.google.com/analytics/) account  
-3. all settings are in `_config.yml` 
+### Installing Jekyll
 
-## Other  
-whoever use this theme please add your site to the [wiki](https://github.com/jokinkuang/stepbystep/wiki)  
+If you don't have Jekyll already installed, you will need to go ahead and do that.
 
-## How It works  
-[English](http://www.jokinkuang.info/2016/09/03/stey-by-step-to-create-a-jekyll-theme.html)  
-[ 中文 ](http://www.jokinkuang.info/2016/09/03/how-to-create-the-jekyll-theme.html)
+```
+$ gem install jekyll
+```
 
-## License  
-Under The [MIT](https://tldrlegal.com/license/mit-license) License
+#### Verify your Jekyll version
 
+It's important to also check your version of Jekyll since this project uses Native Sass which
+is [only supported by 2.0+](http://jekyllrb.com/news/2014/05/06/jekyll-turns-2-0-0/).
+
+```
+$ jekyll -v
+# This should be jekyll 2.0.0 or later
+```
+
+### Fork, then clone
+
+Fork the repo, and then clone it so you've got the code locally.
+
+### Modify the _config.yml
+
+The `_config.yml` located in the root of the Pixyll directory contains all of the configuration details
+for the Jekyll site.
+
+### Jekyll Serve
+
+Then, start the Jekyll Server. I always like to give the `--watch` option so it updates the generated HTML when I make changes.
+
+```
+$ jekyll serve --watch
+```
+
+Now you can navigate to `localhost:4000` in your browser to see the site.
+
+### Using Github Pages
+
+You can host your Jekyll site for free with Github Pages. [Click here](https://pages.github.com/) for more information.
+
+## License
+
+This project is licensed under the terms of the MIT license.
+
+## Thanks to the following:
+
+* [Jekyll](http://jekyllrb.com)
+* [Github Pages](https://pages.github.com/)
+* [Richard Leland: pygment](https://github.com/richleland/pygments-css)
+* [mrdoob: three.js](https://github.com/mrdoob/three.js/)
+* [Font Awesome](http://fortawesome.github.io/Font-Awesome/)
+* [Paul D. Hunt: Source Sans Pro](https://plus.google.com/108888178732927400671/about)
+* [Victor Gaultney: Gentium Basic](https://profiles.google.com/victorgaultneytype/about)
+* [John Otander: Pixyll](https://github.com/johnotander/pixyll/)

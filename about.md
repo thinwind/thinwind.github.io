@@ -12,6 +12,7 @@ permalink: /about/
 除了睡觉及不可抗拒因素（也许正在医院排队给宝宝看病），我一定立刻给您答复。         
 为了给家人一片可以自由呼吸的空气，我时刻准备着。
 
-email: niceshang[at]163.com    niceshang[at]icloud.com      
-
-    _注:(请将[at]替换为@)_
+email:            
+   niceshang[at]163.com        
+   niceshang[at]icloud.com         
+   _注:(请将[at]替换为@)_

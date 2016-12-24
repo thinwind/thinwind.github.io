@@ -9,6 +9,9 @@ Author Question: **Argaen**
 
 Code Fights Weekly has gained popularity in the past months and is receiving lots of fan letters. Unfortunately, some of the readers use offensive words and the editor wants to keep the magazine family friendly.
 
+
+
+
 To manage this, you have been asked to implement a censorship algorithm. You will be given the fan letter `text` and a list of `forbiddenWords`. Your algorithm should replace all occurrences of the forbidden words in the text with sequences of asterisks of the same length.
 
 Be careful to censor only words, no one want to see `"classic"` spelled as `"cl***ic"`.

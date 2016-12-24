@@ -4,7 +4,7 @@
 body {
     font-family: "Roboto Condensed", Arial, sans-serif;
     background-color: #fff;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.5em;
     color: #666;
     font-weight: 300;
@@ -205,8 +205,22 @@ div.col-sm-3 img#about {
 }
 .post-content img, .content img {max-width: 100%}
 
+.post-meta { color: #ADADAD; font-size: 12px; margin-left: 0px; }
+
+hr.content-meta{ margin: 0 0 19px; border: 0; border-bottom: 1px solid #F7F1F1; }
+
 h4.author-name{
     padding-left: 8px;
+}
+
+div.content-excerpt{
+    font-size: 12px;
+    margin-bottom: 42px;
+    margin-left: 16px;
+}
+
+h5.post-title a{
+    color: #535353;
 }
 
 /* Responsive Conditional */

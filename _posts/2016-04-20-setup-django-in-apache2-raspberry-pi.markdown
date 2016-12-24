@@ -9,6 +9,9 @@ Setup Django in apache2 Raspberry Pi. Example in this configuration for monitori
 
 As following this configurations [https://github.com/k3oni/pydash/wiki/Install-pyDash#3-setup-apache](https://github.com/k3oni/pydash/wiki/Install-pyDash#3-setup-apache), how to setup it.
 
+
+
+
 * **Edit in your:**
 
 ```shell

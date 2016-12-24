@@ -21,6 +21,9 @@ project_dir/
                build.pyc
 {% endhighlight %}
 
+
+
+
 Deleting the `.pyc` files one by one would be spending a lot of time. and you will be bored. There is sample how to handle it.
 
 ```

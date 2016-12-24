@@ -7,6 +7,9 @@ categories: [python, security]
 
 Hello gays, this night i want to share my Python Crazy Decrypter tool. Python Crazy Decrypter is real crazy tool to decrypt md5, sha1, sha224, sha256, sha384, and sha512 with Brute Force method. Like most hashes Decrypter we know used the database to check the hash is valid or not.
 
+
+
+
 This Python Crazy Decrypter tool use the brute force method with complete charachters or with custom charachters choices, and with Hash Type Checker. But, of course it will spend a long time if the result of hash have a very long length, coz this use the brute force method.
 
 **Example Usage**

@@ -15,6 +15,9 @@ I have an integer number, which I want to reverse by following steps:
 
 Can you help me write a function to do it ?
 
+
+
+
 **Example**
 
 For `x = 234`, the output should be `ReverseBit(x) = 87`.

@@ -8,6 +8,9 @@ Add this configurations in your `settings.py`
 
 This configurations is if you work with `smtp.gmail.com`, other smtp is similiar with configurations.
 
+
+
+
 * Unlock Captha: [https://accounts.google.com/DisplayUnlockCaptcha](https://accounts.google.com/DisplayUnlockCaptcha)
 * Change to active: [https://www.google.com/settings/security/lesssecureapps](https://www.google.com/settings/security/lesssecureapps)
 

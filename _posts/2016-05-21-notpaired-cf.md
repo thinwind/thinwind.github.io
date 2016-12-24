@@ -9,6 +9,9 @@ Author Question: **Lepluto**
 
 In Numberland, every integer living there has a soulmate which is the exact same number. To prevent family disasters, the Numberland mayor made sure that there is no more than two of a certain number. However, he clearly forgot to create a pair for one of the numbers, making it very sad and lonely. Given the array representing Numberland's citizens, your task is to find which number you need to add to the array so that everyone has a pair.
 
+
+
+
 **Example:**
 
 * `notPaired([1, 2, 1]) = 2`

@@ -13,6 +13,9 @@ Next, each substring with length greater than one is replaced with a concatenati
 for example, substring `"bbb"` is replaced by `"3b"`
 Finally, all the new strings are concatenated together in the same order and a new string is returned.
 
+
+
+
 #### SUBSTRING
 
 A **substring** of a string `S` is another string `S'` that occurs in `S`. For example, `"Fights"` is a substring of `"CodeFights"`, but `"CoFi"` isn't.

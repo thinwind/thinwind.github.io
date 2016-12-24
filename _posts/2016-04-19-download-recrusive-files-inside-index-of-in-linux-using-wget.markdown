@@ -14,6 +14,8 @@ For me I have to pass the --no-parent option, otherwise it will follow the link 
 wget -r --no-parent http://mysite.com/configs/.vim/
 ```
 
+
+
 Edit: To avoid downloading the index.html files, use this command:
 
 ```

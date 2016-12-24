@@ -3,12 +3,14 @@ layout: default
 ---
 
 <div id="home">
-    <h1>Stack Problems</h1>
-    <hr />
+    <h1></h1>
     <ol class="posts">
     {% for post in paginator.posts %}
-      <li><a href="{{ post.url }}">{{ post.title }}</a> &raquo; <i><span>{{ post.date | date_to_string }}</span></i>
-      <p>{{ post.excerpt }}</p>
+      <li>
+        <h5 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h5>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y %H:%m" }}</span>
+        <hr class="content-meta" />
+        <div class="content-excerpt">{{ post.excerpt }}</div>
       </li>
     {% endfor %}
     </ol>
@@ -16,6 +18,8 @@ layout: default
     <!-- Pagination links -->
     {% if paginator.total_pages > 1 %}
     <ul class="pagination pagination-sm">
+      <li><a href="/">First</a></li>
+
       {% if paginator.previous_page %}
         <li>
           <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo;</a>
@@ -23,8 +27,6 @@ layout: default
       {% else %}
         <li class="disabled"><span aria-hidden="true">&laquo;</span></li>
       {% endif %}
-
-      <li><a href="/">First</a></li>
 
       {% for page in (1..paginator.total_pages) %}
         {% if page == paginator.page %}
@@ -40,8 +42,6 @@ layout: default
         {% endif %}
       {% endfor %}
 
-      <li><a href="/page{{ paginator.total_pages }}/">Last</a></li>
-
       {% if paginator.next_page %}
         <li>
           <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">&raquo;</a>
@@ -49,6 +49,8 @@ layout: default
       {% else %}
         <li class="disabled"><span>&raquo;</span></li>
       {% endif %}
+
+       <li><a href="/page{{ paginator.total_pages }}/">Last</a></li>
     </ul>
     {% endif %}
 </div><!-- end #home -->

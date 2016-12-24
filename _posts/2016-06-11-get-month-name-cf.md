@@ -12,6 +12,8 @@ Map the given integer to a month.
 * For `mo = 1`, the output should be `getMonthName(mo) = "Jan"`,
 * For `mo = 0`, the output should be `getMonthName(mo) = "invalid month"`.
 
+
+
 **Input/Output**
 
 * [time limit] 4000ms (py)

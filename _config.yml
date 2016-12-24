@@ -5,6 +5,8 @@ github: https://github.com/thinwind
 about: 我是一个勤劳的码农，现在主要从事Java应用开发
 disqus_shortname: freeland
 
+excerpt_separator: "\n\n\n"
+
 enableTags: true
 tagarray: []
 
@@ -15,7 +17,7 @@ collections:
 
 urls:
     - text: 分类浏览
-      url: category/java
+      url: /category/java
     - text: 关于我
       url: /about/
     - text: 我的Github
@@ -25,8 +27,8 @@ urls:
 
 url: "https://thinwind.github.io"
 baseurl: ""
-paginate: 6
-per_page: 6
+paginate: 4
+per_page: 4
 paginate_path: "/page:num/"
 markdown: kramdown
 gems:

@@ -14,12 +14,12 @@ collections:
     permalink: /project/:path/
 
 urls:
+    - text: 分类浏览
+      url: /projects/
     - text: 关于我
       url: /about/
     - text: 我的Github
       url: https://github.com/thinwind
-    - text: 分类浏览
-      url: /projects/
     - text: RSS订阅
       url: /feed.xml
 

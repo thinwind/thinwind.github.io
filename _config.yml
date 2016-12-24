@@ -15,7 +15,7 @@ collections:
 
 urls:
     - text: 分类浏览
-      url: /projects/
+      url: category/python/java
     - text: 关于我
       url: /about/
     - text: 我的Github

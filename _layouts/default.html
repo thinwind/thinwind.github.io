@@ -83,6 +83,8 @@
                 </div>
                 {% endif %}
 
+                <hr />
+
                 <div class="search" id="js-search">
                   <input type="text" placeholder="(sitemap)~$ type to search" class="search__input form-control" id="js-search__input">
                   <ul class="search__results" id="js-search__results"></ul>
@@ -90,7 +92,7 @@
                 <hr />
 
                 <strong>Navigation</strong><br />
-                    &nbsp;&raquo; <a href="/">Home</a> <br />
+                    &nbsp;&raquo; <a href="/">首页</a> <br />
                 {% for i in site.urls %}
                     &nbsp;&raquo; <a class="about" href="{{ i.url }}">{{ i.text }}</a><br />
                 {% endfor %}

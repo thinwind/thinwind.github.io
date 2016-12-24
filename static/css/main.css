@@ -218,6 +218,6 @@ h4.author-name{
 }
 @media (max-width: 768px) {
     div.col-sm-3 {
-        margin-top: 60px;
+        margin-top: 30px;
     }
 }

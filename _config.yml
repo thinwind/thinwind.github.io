@@ -15,7 +15,7 @@ collections:
 
 urls:
     - text: 分类浏览
-      url: category/python/java
+      url: category/java
     - text: 关于我
       url: /about/
     - text: 我的Github
@@ -25,8 +25,8 @@ urls:
 
 url: "https://thinwind.github.io"
 baseurl: ""
-paginate: 20
-per_page: 20
+paginate: 6
+per_page: 6
 paginate_path: "/page:num/"
 markdown: kramdown
 gems:

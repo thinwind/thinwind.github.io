@@ -2,7 +2,7 @@ title: 商商的自由小屋
 description: Shangshang's free land.
 author: 商叶华
 github: https://github.com/thinwind
-about: I am a software developer. Currently doing more in Java.
+about: 我是一个勤劳的码农，现在主要从事Java应用开发
 disqus_shortname: freeland
 
 enableTags: true
@@ -16,11 +16,11 @@ collections:
 urls:
     - text: 关于我
       url: /about/
-    - text: Projects
-      url: /projects/
-    - text: Github
+    - text: 我的Github
       url: https://github.com/thinwind
-    - text: XML Feed
+    - text: 分类浏览
+      url: /projects/
+    - text: RSS订阅
       url: /feed.xml
 
 url: "https://thinwind.github.io"

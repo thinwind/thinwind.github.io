@@ -206,6 +206,10 @@ div.col-sm-3 img#about {
 }
 .post-content img, .content img {max-width: 100%}
 
+h4.author-name{
+    padding-left: 8px;
+}
+
 /* Responsive Conditional */
 @media (min-width: 1024px) {
     .fixed-condition {

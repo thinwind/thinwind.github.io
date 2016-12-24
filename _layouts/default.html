@@ -75,7 +75,7 @@
         <div class="container">
             <div class="col-sm-3">
               <div class="fixed-condition">
-                <a href="/"><img id="about" src="/static/img/avatar.png" height="75px" width="112px" /></a>
+                <a href="/"><img id="about" src="/static/img/avatar.png" height="75px" width="75px" /></a>
                 <h4 class="author-name">{{ site.author }}</h4>
                 {% if site.about %}
                 <div id="about">
@@ -91,7 +91,7 @@
                 </div>
                 <hr />
 
-                <strong>Navigation</strong><br />
+                <strong>导航栏</strong><br />
                     &nbsp;&raquo; <a href="/">首页</a> <br />
                 {% for i in site.urls %}
                     &nbsp;&raquo; <a class="about" href="{{ i.url }}">{{ i.text }}</a><br />

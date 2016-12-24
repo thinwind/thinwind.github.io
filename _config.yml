@@ -1,10 +1,9 @@
-title: Stack Problems
-description: My Personal Stack Problems
-author: Agus Makmun
-github: https://github.com/agusmakmun
-about: I am freelance developer. Currently doing more in backend, actually in Python and Django.
-disqus_shortname: stackproblems
-google_analytics: UA-XXXXXXXX-Y
+title: 商商的自由小屋
+description: Shangshang's free land.
+author: 商叶华
+github: https://github.com/thinwind
+about: I am a software developer. Currently doing more in Java.
+disqus_shortname: freeland
 
 enableTags: true
 tagarray: []
@@ -14,33 +13,17 @@ collections:
     output: true
     permalink: /project/:path/
 
-social:
-    - icon: fa-facebook
-      link: "#"
-    - icon: fa-skype
-      link: "#"
-    - icon: fa-twitter
-      link: "https://twitter.com/agusmakmun6"
-    - icon: fa-linkedin
-      link: "#"
-    - icon: fa-stack-exchange
-      link: "#"
-
-share:
-  twitter_username: agusmakmun6
-  fb_appid: 1749788565247320
-
 urls:
-    - text: About Me
+    - text: 关于我
       url: /about/
     - text: Projects
       url: /projects/
     - text: Github
-      url: https://github.com/agusmakmun
+      url: https://github.com/thinwind
     - text: XML Feed
       url: /feed.xml
 
-url: "https://agusmakmun.github.io"
+url: "https://thinwind.github.io"
 baseurl: ""
 paginate: 20
 per_page: 20

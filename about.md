@@ -19,6 +19,6 @@ permalink: /about/
                
 
 email:            
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;niceshang<span style="color:blue">#</span>163.com        
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;niceshang<span style="color:blue">#</span>icloud.com         
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*注:(请将<span style="color:blue">#</span>替换为<span style="color:blue">@</span>)*    
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;niceshang<span style="color:#669">#</span>163.com        
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;niceshang<span style="color:#669">#</span>icloud.com         
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*注:(请将<span style="color:#669">#</span>替换为<span style="color:#669">@</span>)*    

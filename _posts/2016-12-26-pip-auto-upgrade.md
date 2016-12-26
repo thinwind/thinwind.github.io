@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Java实现数值型ID生成器"
+title:  "pip自动更新所有过时库"
 date:   2016-12-25 02:14:45 +0800
 categories: [python bash shell]
 ---

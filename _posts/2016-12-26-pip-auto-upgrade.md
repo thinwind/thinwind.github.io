@@ -2,7 +2,7 @@
 layout: post
 title:  "pip自动更新所有过时库"
 date:   2016-12-25 02:14:45 +0800
-categories: [python bash shell]
+categories: [python, shell]
 ---
 
 ##### 问题：pip没有自动全部更新的指令

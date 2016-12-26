@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "pip自动更新所有过时库"
-date:   2016-12-25 02:14:45 +0800
+date:   2016-12-26 09:14:45 +0800
 categories: [python, shell]
 ---
 

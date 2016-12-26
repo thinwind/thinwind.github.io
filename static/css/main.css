@@ -137,7 +137,7 @@ div.right .post ul {
  * Left column aka nav bar formatting
  */
 div.col-sm-3 {
-        margin-top: 100px;
+        margin-top: 32px;
         font-size: 11px;
         color: #666;
 }
@@ -221,6 +221,10 @@ div.content-excerpt{
 
 h5.post-title a{
     color: #535353;
+}
+
+div.svg-container{
+    margin-top: 58px;
 }
 
 /* Responsive Conditional */

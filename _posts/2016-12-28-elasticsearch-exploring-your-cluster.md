@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "ES系列之三安装"
+title:  "ES系列之四了解簇"
 date:   2016-12-28 01:11:00 +0800
 categories: [java, elasticsearch]
 ---

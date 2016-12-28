@@ -55,3 +55,143 @@ ip        heap.percent ram.percent cpu load_1m load_5m load_15m node.role master
 
 可以看到名为"my_node_name"的节点，这是当前簇中唯一的节点。
 
+**显示所有索引**
+
+下面瞄一眼所有的索引：
+
+```bash
+curl -XGET 'localhost:9200/_cat/indices?v&pretty'
+```
+
+得到的结果可能如下：
+
+```bash
+health status index uuid pri rep docs.count docs.deleted store.size pri.store.size
+```
+
+这说明当前簇中还没有索引。
+
+**创建索引**
+
+下面我们首先创建一个名叫“customer”的索引，然后再显示所有索引。
+
+```bash
+curl -XPUT 'localhost:9200/customer?pretty&pretty'
+curl -XGET 'localhost:9200/_cat/indices?v&pretty'
+```
+
+第一条命令使用put请求创建了一个名为“customer”的索引。我们简单的将`pretty`放到请求结尾，让响应以易读形式打印。结果如下：
+
+```javascript
+{
+  "acknowledged" : true,
+  "shards_acknowledged" : true
+}
+```
+
+第二个命令的结果如下：
+
+```bash
+health status index    uuid                   pri rep docs.count docs.deleted store.size pri.store.size
+yellow open   customer arjULDnoTMCInP6Jz2hGIQ   5   1          0            0       650b           650b
+```
+
+这个结果显示现在有1个名为“customer”的索引，有5个主瓦片和一个复制片（默认数量），有0个文档。
+
+你可能注意到这个索引的健康状况是黄色。回想一下之前的说明，黄色代表了有复制片还没有被分配。这个索引出现这种现象，是因为Elasticsearch默认为它创建了一个复制片；既然当前就只有一个节点，复制片就无法被分配到不同的节点（为了高可用），除非有其它节点加入到当前簇。一旦复制片被分配到另一个节点，索引的健康状况将会变成绿色。
+
+**为文档建立索引并检索**
+
+下面给customer索引加点料。回想一下，曾说过要给文档建立索引，必须明确告诉Elasticsearch这个文档应该划归为哪种类型。
+下面在customer索引中新增一个简单的文档，定为"external"类型，并将id赋为1。
+
+```bash
+curl -XPUT 'localhost:9200/customer/external/1?pretty&pretty' -d'
+{
+  "name": "John Doe"
+}'
+```
+
+得到如下的结果：
+
+```javascript
+{
+  "_index" : "customer",
+  "_type" : "external",
+  "_id" : "1",
+  "_version" : 1,
+  "result" : "created",
+  "_shards" : {
+    "total" : 2,
+    "successful" : 1,
+    "failed" : 0
+  },
+  "created" : true
+}
+```
+
+从上面的结果，我们可以看出来一个新的文档被成功创建到customer索引中，并被归入external类型。文档内置id为1，跟创建时所声明的一致。
+
+注意一下，Elasticsearch并不要求在将文档加入索引前必须先显式创建该索引。上面的例子，如果没有先创建customer索引，Elasticsearch将会自动创建它。
+
+接下来获取刚刚建立索引的文档：
+
+```bash
+curl -XGET 'localhost:9200/customer/external/1?pretty&pretty'
+```
+
+结果如下：
+
+```javascript
+{
+  "_index" : "customer",
+  "_type" : "external",
+  "_id" : "1",
+  "_version" : 1,
+  "found" : true,
+  "_source" : {
+    "name" : "John Doe"
+  }
+}
+```
+
+这里`found`属性应该关注一下，它表明找到了ID为1的文档，另一个属性，`_source`，保存了之前加入的完整的JSON文档。
+
+**删除索引**
+
+下面删除之前创建的索引，然后再查看一次所有索引：
+
+```bash
+curl -XDELETE 'localhost:9200/customer?pretty&pretty'
+curl -XGET 'localhost:9200/_cat/indices?v&pretty'
+```
+
+结果：
+
+```bash
+health status index uuid pri rep docs.count docs.deleted store.size pri.store.size
+```
+
+这说明索引被成功删除，我们又回到最开始没有索引的状态。
+
+在继续下一步之前，我们再来审视一下学过的API命令：
+
+```bash
+curl -XPUT 'localhost:9200/customer?pretty'
+curl -XPUT 'localhost:9200/customer/external/1?pretty' -d'
+{
+  "name": "John Doe"
+}'
+curl -XGET 'localhost:9200/customer/external/1?pretty'
+curl -XDELETE 'localhost:9200/customer?pretty'
+```
+
+如果仔细观察上面的命令，可以看到获取Elasticsearch数据的模式。这个模式形式如下：
+
+```html
+<REST Verb> /<Index>/<Type>/<ID>
+```
+
+这种使用模式将会贯穿所有的API命令，记住这点，是掌握Elasticsearch的一个好的开始。
+
+

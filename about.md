@@ -48,7 +48,7 @@ permalink: /about/
 
 #### 请联系我    
         
-为了给家人一片可以自由呼吸的空气，我时刻准备着。          
+请给我发邮件索取简历，我一定会及时发送。          
 
 email:            
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;niceshang<span style="color:#669">[at]</span>163.com        

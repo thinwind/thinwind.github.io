@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "ES系列之六探索你的数据"
+title:  "ES系列之六探索你的数据(一)"
 date:   2016-12-29 22:45:00 +0800
 categories: [java, elasticsearch]
 ---

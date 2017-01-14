@@ -4,7 +4,7 @@ title: 关于
 permalink: /about/
 ---     
 
-目前主要从事Java开发工作。现在正在办理离职中，如果您有用人需求请[点击这里](/static/projects/商叶华-Java-GIS-简历.pdf)下载我的简历。    
+目前主要从事Java开发工作。现在正在办理离职中，如果您有用人需求请[点击这里](/static/projects/商先生-Java-GIS-简历.pdf)下载我的简历。    
 
 ##### 简单介绍：
 

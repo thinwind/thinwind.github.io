@@ -12,6 +12,10 @@
         }
       }
       if(flag){
-        document.getElementById("bgscript-container").innerHTML="<script src='/static/js/canvas-nest.min.js'></script>";
+        var st=document.createElement("script");
+        st.type="text/javascript";
+        st.src="/static/js/canvas-nest.min.js";
+
+        document.getElementById("bgscript-container").appendChild(st);
       }
     })();

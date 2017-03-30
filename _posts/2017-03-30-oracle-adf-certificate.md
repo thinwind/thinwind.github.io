@@ -7,12 +7,12 @@ categories: [java]
 
 官网地址： http://www.oracle.com/technetwork/developer-tools/adf/overview/index.html
 
-###### About
+##### About
 
-> Oracle ADF is an end-to-end Java EE framework that simplifies application development by providing out-of-the-box infrastructure services and a visual and declarative development experience.
-
-
+*Oracle ADF is an end-to-end Java EE framework that simplifies application development by providing out-of-the-box infrastructure services and a visual and declarative development experience.*
 
 
 
-![高级课程结业证书](/static/img/png.jpg)
+
+
+![高级课程结业证书](/static/img/zs.png)

@@ -12,6 +12,6 @@
         }
       }
       if(flag){
-        document.getElementById("home").appendChild("<script src='/static/js/canvas-nest.min.js'></script>");
+        document.getElementById("bgscript-container").innerHTML="<script src='/static/js/canvas-nest.min.js'></script>";
       }
     })();

@@ -1,26 +1,8 @@
 --- layout: default ---
 
 <div id="home">
-  <script type="text/javascript">
-    (function() {
-      var userAgentInfo = navigator.userAgent;
-      var Agents = ["Android", "iPhone",
-        "SymbianOS", "Windows Phone",
-        "iPad", "iPod"
-      ];
-      var flag = true;
-      for (var v = 0; v < Agents.length; v++) {
-        if (userAgentInfo.indexOf(Agents[v]) > 0) {
-          flag = false;
-          break;
-        }
-      }
-      if(flag){
-        document.writeln("<script src='/static/js/canvas-nest.min.js'><\/script>");
-      }
-    })();
-  </script>
   
+  <script src='/static/js/bgwrite.js'></script>
   <h1></h1>
   <ol class="posts">
     {% for post in paginator.posts %}

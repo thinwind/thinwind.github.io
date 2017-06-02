@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "coding批量生成项目脚本"
+title:  "利用场景法建立用户业务场景"
 date:   2017-06-02 00:00:00 +0800
 categories: [java]
 ---

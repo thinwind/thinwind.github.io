@@ -5,6 +5,7 @@ date:   2017-04-01 00:00:00 +0800
 categories: [java]
 ---
 
+
 Oracle ADF官网地址: http://www.oracle.com/technetwork/cn/developer-tools/adf/overview/index-097465-zhs.html
 
 Oracle ADF是一个端到端的Java EE框架，它通过提供现成的基础架构服务以及可视的、声明式开发体验简化了应用程序开发。
@@ -18,15 +19,15 @@ GlassFish是一款强健的商业兼容应用服务器，达到产品级质量�
 
 
       
-
-##### 版本说明
+    
+#### 版本说明
      
      
-| 工具 | 版本 | 下载地址 | 
-| ---- | ----- | ----- | 
-| Adf & Jdeveloper | 12.2.1.2.0 | http://www.oracle.com/technetwork/developer-tools/jdev/downloads/index.html | 
-| GlassFish	| 4.1.1-Full Platform	|  https://glassfish.java.net/download.html | 
-| Adf-essentials	 | 12.2.1.2	 | http://www.oracle.com/technetwork/developer-tools/adf/downloads/index.html | 
+ | 工具 | 版本 | 下载地址 | 
+ | ---- | ----- | ----- | 
+ | Adf & Jdeveloper | 12.2.1.2.0 | http://www.oracle.com/technetwork/developer-tools/jdev/downloads/index.html | 
+ | GlassFish	| 4.1.1-Full Platform	|  https://glassfish.java.net/download.html | 
+ | Adf-essentials	 | 12.2.1.2	 | http://www.oracle.com/technetwork/developer-tools/adf/downloads/index.html | 
 
 
 #### 配置GlassFish
@@ -35,8 +36,8 @@ GlassFish是一款强健的商业兼容应用服务器，达到产品级质量�
 
    *注意* :
 
-  * 官网文档描述时解压到lib/applibs，据实测不可行。详细描述可参考 https://community.oracle.com/message/14061462
-  * 解压Adf-essentials时，使用`unzip -j adf-essentials.zip -d <dir>`，解压的时候不带目录结构。拷贝的时候只拷jar文件，不要带目录结构，最终结果如下图
+   * 官网文档描述时解压到lib/applibs，据实测不可行。详细描述可参考 https://community.oracle.com/message/14061462
+   * 解压Adf-essentials时，使用`unzip -j adf-essentials.zip -d <dir>`，解压的时候不带目录结构。拷贝的时候只拷jar文件，不要带目录结构，最终结果如下图
     
     ![](/static/img/lib-jars.png)
 

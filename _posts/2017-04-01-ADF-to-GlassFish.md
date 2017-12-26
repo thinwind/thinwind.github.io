@@ -31,7 +31,8 @@ GlassFish是一款强健的商业兼容应用服务器，达到产品级质量�
 
 
 #### 配置GlassFish
-
+    
+    
 1. 解压Adf-essentials，将所有的jar文件放到 `path-to-glassfish/glassfish/domains/domain1/lib`
 
    *注意* :
@@ -124,7 +125,7 @@ GlassFish是一款强健的商业兼容应用服务器，达到产品级质量�
    
           
 10. 将应用部署到GlassFish
-
+    
    * 打开浏览器，进入GlassFish的`Administration Console`
    
    ![](/static/img/a2g-10-1.png)
@@ -142,19 +143,12 @@ GlassFish是一款强健的商业兼容应用服务器，达到产品级质量�
 11. 访问应用
    
    * 点击应用名，进入详情编辑页
-   
    ![](/static/img/a2g-11-1.png)
-
-   
    * 点击lunch连接
-   
    ![](/static/img/a2g-11-2.png)
-
-   
    * 进入链接详情页
-   
    ![](/static/img/a2g-11-3.png)
-   
+      
 
    *注意*：链接的默认地址是本地电脑的名称，需要将此名称换成该电脑对应的ip地址（如果是本机可以使用`localhost`或者`127.0.0.1`）
    

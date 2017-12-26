@@ -21,10 +21,10 @@ GlassFish是一款强健的商业兼容应用服务器，达到产品级质量�
       
     
 #### 版本说明
-     
-     
+        
+          
  | 工具 | 版本 | 下载地址 | 
- | ---- | ----- | ----- | 
+ | --- | --- | --- | 
  | Adf & Jdeveloper | 12.2.1.2.0 | http://www.oracle.com/technetwork/developer-tools/jdev/downloads/index.html | 
  | GlassFish	| 4.1.1-Full Platform	|  https://glassfish.java.net/download.html | 
  | Adf-essentials	 | 12.2.1.2	 | http://www.oracle.com/technetwork/developer-tools/adf/downloads/index.html | 
@@ -39,7 +39,6 @@ GlassFish是一款强健的商业兼容应用服务器，达到产品级质量�
 
    * 官网文档描述时解压到lib/applibs，据实测不可行。详细描述可参考 https://community.oracle.com/message/14061462
    * 解压Adf-essentials时，使用`unzip -j adf-essentials.zip -d <dir>`，解压的时候不带目录结构。拷贝的时候只拷jar文件，不要带目录结构，最终结果如下图
-    
     ![](/static/img/lib-jars.png)
 
 
@@ -67,7 +66,7 @@ GlassFish是一款强健的商业兼容应用服务器，达到产品级质量�
    * 找到mysql连接模版，位置在
 `path-to-glassfish/glassfish/lib/install/templates/resources/jdbc`
    * 编辑`mysql_type4_datasource.xml`文件，修改为恰当的配置
-   ![](/static/img/a2g-3-1.png)
+    ![](/static/img/a2g-3-1.png)
 
    * (可选操作) 在path-to-glassfish/glassfish/bin目录下执行 asadmin ping-connection-pool <connection-pool-name>测试连接池是否可以正常连接
 
@@ -84,7 +83,7 @@ GlassFish是一款强健的商业兼容应用服务器，达到产品级质量�
    * GlassFish 管理界面直接进行数据库连接的操作目前有bug，直接建立连接会报错
    ![](/static/img/a2g-5-2.png)
    
-     ![](/static/img/a2g-5-3.png)
+    ![](/static/img/a2g-5-3.png)
    
    * 目前只使用了模板文件进行配置的方式
    * 按照官网的说明，使用asadmin命令行工具也可以进行连接池和资源的建立，具体请参考：  https://docs.oracle.com/middleware/1212/adf/ADFAG/ap_glassfish.htm#ADFAG20987
@@ -94,10 +93,8 @@ GlassFish是一款强健的商业兼容应用服务器，达到产品级质量�
    * 打开JDeveloper
    * 打开项目
    * 找到连接配置管理文件
-   
-   ![](/static/img/a2g-6-1.png)
-   
-   ![](/static/img/a2g-6-2.png)
+    ![](/static/img/a2g-6-1.png) 
+    ![](/static/img/a2g-6-2.png)
 
 7. 修改ViewController的配置
    
@@ -140,12 +137,8 @@ GlassFish是一款强健的商业兼容应用服务器，达到产品级质量�
     ![](/static/img/a2g-11-2.png)
    * 进入链接详情页
     ![](/static/img/a2g-11-3.png)
-      
-
-   *注意*：链接的默认地址是本地电脑的名称，需要将此名称换成该电脑对应的ip地址（如果是本机可以使用`localhost`或者`127.0.0.1`）
-   
+   *注意*：链接的默认地址是本地电脑的名称，需要将此名称换成该电脑对应的ip地址（如果是本机可以使用`localhost`或者`127.0.0.1`）   
    * 修改为正确的url以后，就可以看到应用界面了
-   
-   ![](/static/img/a2g-11-4.png)
+    ![](/static/img/a2g-11-4.png)
 
 

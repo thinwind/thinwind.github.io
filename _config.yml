@@ -17,7 +17,7 @@ collections:
 
 urls:
     - text: 分类浏览
-      url: /category/java
+      url: /category/http
     - text: 关于我
       url: /about/
     - text: 我的Github

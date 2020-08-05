@@ -4,13 +4,13 @@ title: 关于
 permalink: /about/
 ---     
 
-目前主要从事Java开发工作，欢迎各位小伙伴探讨技术姿势～～～～   
+在平凡这条拥挤的不归路上，越走越远。   
       
 
 email:            
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;niceshang<span style="color:#669">[at]</span>163.com        
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;niceshang<span style="color:#669">[at]</span>icloud.com         
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*(请将<span style="color:#669">[at]</span>替换为<span style="color:#669">@</span>)*    
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;niceshang<span style="color:#669">[at]</span>outlook.com        
+    
 
-*<span style="color:#9f9f9f;font-size:10px">If you know the girl with the name of </span><span style="color:#828;font-size:10px">Grace</span>*    
-*<span style="color:#9f9f9f;font-size:10px">Please tell her I <span style="color:#282">miss</span> her</span>*
+*<span style="color:#9f9f9f;font-size:10px">Her name is </span><span style="color:#828;font-size:10px">Grace</span>*    
+*<span style="color:#9f9f9f;font-size:10px">How can I tell you,I miss you so much.</span>* 
+*<span style="color:#9f9f9f;font-size:10px">But the dreams that I would never meet you again in my whole left life, drown me in the boundless loneliness.</span>*   
